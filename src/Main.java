@@ -130,11 +130,32 @@ public class Main {
             short grammPerDay2 = 500;
 
             int dayCount = weight / grammPerDay;
-            int dayCount2 = dayCount/2;
+            int dayCount2 = dayCount / 2;
 
-            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay+ " грамм в день." +" Для этого ему потребуется " + dayCount+ " дней." );
-            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay2+ " грамм в день." +" Для этого ему потребуется " + dayCount2+ " дней." );
+            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay + " грамм в день." + " Для этого ему потребуется " + dayCount + " дней.");
+            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay2 + " грамм в день." + " Для этого ему потребуется " + dayCount2 + " дней.");
+        }
+        {
 
+            System.out.println("  Задача 8  ");
+
+            int mashaSalary = 67_760;
+            int denisSalary = 83_690;
+            int krisSalary = 76_230;
+
+            float bet = 1.1f;
+
+            float riseMashaSalary = mashaSalary * bet;
+            float riseDenisSalary = denisSalary * bet;
+            float riseKrisSalary = krisSalary * bet;
+
+            float mashaNewSalary = riseMashaSalary * 12 - mashaSalary * 12;
+            float denisNewSalary = riseDenisSalary * 12 - denisSalary * 12;
+            float krisNewSalary = riseKrisSalary * 12 - krisSalary * 12;
+
+            System.out.println("Маша теперь получает " + riseMashaSalary + " рублей, годовой доход Маши вырос на " + mashaNewSalary + " рублей");
+            System.out.println("Денис теперь получает " + riseDenisSalary + " рублей, годовой доход Дениса вырос на " + denisNewSalary + " рублей");
+            System.out.println("Кристина теперь получает " + riseKrisSalary + " рублей, годовой доход Кристина вырос на " + krisNewSalary + " рублей");
 
         }
     }
