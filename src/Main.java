@@ -60,14 +60,80 @@ public class Main {
             System.out.println(" В классе Людмилы Павловны " + firstClass + " ученика," + " в классе Анны Сергеевны " + secondClass + " учеников, а" + " в классе Екатерины Андреевны, " + thirdClass + " учеников .");
 
             int paperForSchoolboy = allPaper / (firstClass + secondClass + thirdClass);
-            System.out.println(" Всего было выделено " + allPaper + " листов бумаги " );
+            System.out.println(" Всего было выделено " + allPaper + " листов бумаги ");
             System.out.println(" На каждого ученика рассчитано " + paperForSchoolboy + " листов бумаги ");
 
         }
         {
             System.out.println("  Задача 4  ");
 
+            byte bottle = 16;
+            byte time = 2;
 
+            int bottleByMinute = bottle / time;
+
+            int time1 = 20;
+
+            System.out.println(" За " + time1 + "  минут машина произвела " + time1 * bottleByMinute + " штук бутылок");
+            int time2 = 24 * 60;
+            System.out.println(" За " + time2 + "  минут машина произвела " + time2 * bottleByMinute + " штук бутылок");
+            int time3 = 3 * time2;
+            System.out.println(" За " + time3 + "  минут машина произвела " + time3 * bottleByMinute + " штук бутылок");
+            int time4 = time3 * 10;
+            System.out.println(" За " + time4 + "  минут машина произвела " + time4 * bottleByMinute + " штук бутылок");
+
+        }
+        {
+            System.out.println("  Задача 5  ");
+
+            byte allTin = 120;
+            byte whiteTin = 2;
+            byte brownTin = 4;
+
+            int numberOfClass = allTin / (whiteTin + brownTin);
+            int whiteTinNeeded = numberOfClass * whiteTin;
+            int brownTinNeeded = numberOfClass * brownTin;
+
+            System.out.println(" Для школы было закупленно " + allTin + " банок краски. " + " В школе " + numberOfClass + " классов" + " , на каждый класс требуется  " + whiteTin + " банки белой краски, и " + brownTin + " банки коричневой краски.");
+
+            System.out.println("В школе, где " + numberOfClass + " классов , нужно " + whiteTinNeeded + " банок белой краски и " + brownTinNeeded + " банок коричневой краски.");
+
+        }
+        {
+            System.out.println("  Задача 6  ");
+
+            byte bananaWeight = 80;
+            byte bananaCount = 5;
+            int bananaTotalWeight = bananaWeight * bananaCount;
+
+            byte milkWeight = 105;
+            byte milkCount = 2;
+            int milkTotalWeight = milkWeight * milkCount;
+
+            byte plombirWeight = 100;
+            byte plombirCount = 2;
+            int plombirTotalWeight = plombirWeight * plombirCount;
+
+            byte eggWeight = 70;
+            byte eggCount = 4;
+            int eggTotalWeight = eggWeight * eggCount;
+
+            int totalWeight = bananaTotalWeight + milkTotalWeight + plombirTotalWeight + eggTotalWeight;
+            float totalWeightKg = totalWeight / 1000f;
+
+            System.out.println(" Завтрак спортсмена: " + totalWeight + " г. ( " + totalWeightKg + " кг )");
+
+            System.out.println("  Задача 7  ");
+
+            short weight = 7000;
+            short grammPerDay = 250;
+            short grammPerDay2 = 500;
+
+            int dayCount = weight / grammPerDay;
+            int dayCount2 = dayCount/2;
+
+            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay+ " грамм в день." +" Для этого ему потребуется " + dayCount+ " дней." );
+            System.out.println(" Спортсмен сбросит нужное колличество веса, если  будет худеть на " + grammPerDay2+ " грамм в день." +" Для этого ему потребуется " + dayCount2+ " дней." );
 
 
         }
